@@ -2,7 +2,9 @@
   <h3>匿名插槽和具名插槽</h3>
   <Child>
     <!-- 具名 -->
-    <template v-slot:btn>
+    <!-- <template v-slot:btn> -->
+    <!-- 可简写为# -->
+    <template #btn>
       <button>按钮</button>
     </template>
     <!-- 匿名 -->
