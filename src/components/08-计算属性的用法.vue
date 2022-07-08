@@ -28,6 +28,18 @@ let dbNum2 = computed(() => {
   return objRet.num1 * 2
 })
 
+/**
+ * get 和 set 的写法
+ */
+// let checkAll = computed({
+//   get() {
+
+//   },
+//   set() {
+
+//   }
+// })
+
 </script>
 
 <style lang="less" scoped>
