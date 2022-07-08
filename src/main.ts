@@ -1,4 +1,4 @@
 import { createApp } from 'vue'
-import App from './components/10-全选或全不选案例.vue'
+import App from './components/11-v-model的传值父组件.vue'
 
 createApp(App).mount('#app')
