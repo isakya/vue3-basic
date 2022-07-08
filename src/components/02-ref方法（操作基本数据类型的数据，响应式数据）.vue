@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue"
+import { defineComponent, ref, Ref } from "vue"
 
 export default defineComponent({
   setup() {
@@ -19,7 +19,12 @@ export default defineComponent({
      * 3. 操作num数据时，需要 .value 
      * 4. 模板上依旧使用 num，因为Vue在编译模板的时候已经帮我们 .value 获取值了
      */
-    let num = ref(20)
+    /**
+     * 增加ts写法：
+     * 1. let num:Ref<number> = ref(20)
+     * 2. let num = ref<number>(20)
+     */
+    let num: Ref<number> = ref(20)
     const hdClick = () => {
       num.value++
       console.log(num);
